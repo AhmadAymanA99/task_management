@@ -58,7 +58,9 @@ The application communicates with a RESTful API to perform CRUD operations on ta
 ```python
 createTask('task') # Create a new task.
 getAllTasks() # Get all tasks (with optional limit).
-updateTask('taskId', 'updatedTask') # Update a task. # updating a created task will produce error because the fake api doesn't allow it so you can test the error handling.
+updateTask('taskId', 'updatedTask') # Update a task. 
+# updating a created task will produce error because the fake api doesn't 
+# allow it so you can test the error handling.
 deleteTask('taskId') # Delete a task.
 ```
 ## Usage
