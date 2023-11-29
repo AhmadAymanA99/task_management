@@ -26,9 +26,6 @@ Reorder tasks effortlessly.
 
 Filter tasks by status (All, Active, Completed).
 
-### Pagination:
-
-Display the first 15 tasks on the initial load.
 
 ### Register & Login:
 
