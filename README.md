@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Tasks App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Tasks app is a lightweight React application designed for efficient task management. It enables users to effortlessly add, edit, delete, and mark tasks as completed. Utilizing Axios, the app seamlessly interacts with a RESTful API to perform CRUD operations.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### Task Management:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Add new tasks.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Edit task names.
 
-### `npm test`
+Delete tasks.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Mark tasks as completed.
 
-### `npm run build`
+### Task List:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Display a draggable list of tasks.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Reorder tasks effortlessly.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Filtering:
 
-### `npm run eject`
+Filter tasks by status (All, Active, Completed).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Pagination:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Display the first 15 tasks on the initial load.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Register & Login:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Register & Log in with authentication token.
 
-## Learn More
+### Logout:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Log out and clear token.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Getting Started
+### Clone the Repository
+```bash
+git clone https://github.com/AhmadAymanA99/task_management.git
+```
+### Install Dependencies
+```bash
+npm install
+```
+### Run the Application
+```bash
+npm start
+```
+The application will be accessible at http://localhost:3000.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## API Integration
+The application communicates with a RESTful API to perform CRUD operations on tasks. The API base URL and endpoints are defined in the src/APIs folder.
 
-### Analyzing the Bundle Size
+### API Functions
+```python
+createTask('task') # Create a new task.
+getAllTasks() # Get all tasks (with optional limit).
+updateTask('taskId', 'updatedTask') # Update a task.
+deleteTask('taskId') # Delete a task.
+```
+## Usage
+1. Adding a Task:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+      a. Enter the task name in the input field.
 
-### Making a Progressive Web App
+      b. Click the "Add" button.
+2. Editing a Task:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+     a. Click the "Edit" button on a task.
 
-### Advanced Configuration
+     b. Modify the task name in the input field.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+     c. Click the "Save" button.
+3. Deleting a Task:
 
-### Deployment
+      Click the "Delete" button on a task.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+4. Completing a Task:
 
-### `npm run build` fails to minify
+      Click the "Complete" button on a task.
+5. Filtering Tasks:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+      Use the "All," "Active," and "Completed" buttons to filter tasks.
+6. Reordering Tasks:
+
+      Drag tasks to reorder them.
+7. Logging Out:
+
+      Click the "Logout" button to log out.
+## Contributing
+
+Feel free to contribute to the development of this application by creating issues or submitting pull requests.
+
+## License
+
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/)
